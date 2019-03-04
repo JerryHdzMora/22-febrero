@@ -1,0 +1,14 @@
+function dydt = func2(t,y)
+alpha=6;
+gamma=2;
+dydt=alpha*y-gamma*y^2;
+end
+
+function[t,y]=callfunc2_1()
+tspan=[0 10];
+y0=10;
+[t,y]=ode45(@func2,tspan,y0);
+end
+
+[t,y]=call_func2_1();
+plot(t,y)
