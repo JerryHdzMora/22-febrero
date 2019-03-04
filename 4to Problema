@@ -1,0 +1,3 @@
+function dydt=funcioncuatro(t,y)
+dydt= (exp^t)/2*y;
+end
