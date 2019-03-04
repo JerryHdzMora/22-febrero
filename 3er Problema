@@ -1,3 +1,10 @@
 function dydt=funciontres(t,y)
 dydt= exp(2*y)*sin(t);
 end
+
+
+function [t,y]=call_funciontres()
+tspan=[0 10];
+y0=0;
+[t,y]=ode45(@funciontres,tspan,y0);
+end
