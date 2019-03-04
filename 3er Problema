@@ -1,0 +1,3 @@
+function dydt=funciontres(t,y)
+dydt= exp(2*y)*sin(t);
+end
