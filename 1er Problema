@@ -1,0 +1,10 @@
+function dydt = func1(t,y)
+dydt=t/y;
+end
+
+
+function[t,y]=callfunc1()
+tspan=[0 10];
+y0=1;
+[t,y]=ode45(@func1,tspan,y0);
+end
