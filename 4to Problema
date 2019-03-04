@@ -1,3 +1,10 @@
 function dydt=funcioncuatro(t,y)
 dydt= (exp^t)/2*y;
 end
+
+
+%%function [t,y]=call_funcioncuatro()
+tspan=[0 10];
+y0=0;
+[t,y]=ode45(@funcioncuatro,tspan,y0);
+end
